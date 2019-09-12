@@ -46,6 +46,7 @@ public class Mobil {
             if ((i+1)%3==0){
                 dcreaseFuel(1);
             }
+            System.out.println("oiiii");
         }
         vFuel();
         return "";
