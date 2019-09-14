@@ -29,7 +29,6 @@ public class Robot {
         if (movement.equals(R)) {
             if (String.valueOf(direction).equals("NORTH")){
                 this.directions = Directions.EAST;
-                System.out.println("" + this.directions);
             }else if(String.valueOf(direction).equals("EAST")){
                 this.directions = Directions.SOUTH;
             }else if(String.valueOf(direction).equals("SOUTH")){
