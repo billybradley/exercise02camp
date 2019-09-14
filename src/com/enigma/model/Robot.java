@@ -27,60 +27,61 @@ public class Robot {
     }
     public String move (String movement, Directions direction){
         if (movement.equals(R)) {
-            if (direction.equals("NORTH")){
+            if (String.valueOf(direction).equals("NORTH")){
                 this.directions = Directions.EAST;
-            }else if(direction.equals("EAST")){
+                System.out.println("" + this.directions);
+            }else if(String.valueOf(direction).equals("EAST")){
                 this.directions = Directions.SOUTH;
-            }else if(direction.equals("SOUTH")){
+            }else if(String.valueOf(direction).equals("SOUTH")){
                 this.directions = Directions.WEST;
-            }else if(direction.equals("WEST")){
+            }else if(String.valueOf(direction).equals("WEST")){
                 this.directions = Directions.NORTH;
             }else{
                 System.out.println("ARAH YANG ANDA MASUKAN SALAH!");
             }
         }else if (movement.equals(L)){
-            if (direction.equals("NORTH")){
+            if (String.valueOf(direction).equals("NORTH")){
                 this.directions = Directions.WEST;
-            }else if(direction.equals("WEST")){
+            }else if(String.valueOf(direction).equals("WEST")){
                 this.directions = Directions.SOUTH;
-            }else if(direction.equals("SOUTH")){
+            }else if(String.valueOf(direction).equals("SOUTH")){
                 this.directions = Directions.EAST;
-            }else if(direction.equals("EAST")){
+            }else if(String.valueOf(direction).equals("EAST")){
                 this.directions = Directions.NORTH;
             }else{
                 System.out.println("ARAH YANG ANDA MASUKAN SALAH!");
             }
         }else if(movement.equals(F)){
-            if (direction.equals("NORTH")){
+            if (String.valueOf(direction).equals("NORTH")){
                 this.postY++;
                 this.directions = Directions.NORTH;
-            }else if(direction.equals("WEST")){
+            }else if(String.valueOf(direction).equals("WEST")){
                 this.postX--;
                 this.directions = Directions.WEST;
-            }else if(direction.equals("SOUTH")){
+            }else if(String.valueOf(direction).equals("SOUTH")){
                 this.postY--;
                 this.directions = Directions.SOUTH;
-            }else if(direction.equals("EAST")){
+            }else if(String.valueOf(direction).equals("EAST")){
                 this.postX++;
                 this.directions = Directions.EAST;
             }else{
                 System.out.println("ARAH YANG ANDA MASUKAN SALAH!");
             }
         }else if(movement.equals(B)){
-            if (direction.equals("NORTH")){
-                this.postY--;
+            if (String.valueOf(direction).equals("NORTH")){
+                this.postY = this.postY - 1;
                 this.directions = Directions.NORTH;
-            }else if(direction.equals("WEST")){
+            }else if(String.valueOf(direction).equals("WEST")){
                 this.postX++;
                 this.directions = Directions.WEST;
-            }else if(direction.equals("SOUTH")){
+            }else if(String.valueOf(direction).equals("SOUTH")){
                 this.postY++;
                 this.directions = Directions.SOUTH;
-            }else if(direction.equals("EAST")){
+            }else if(String.valueOf(direction).equals("EAST")){
                 this.postX--;
                 this.directions = Directions.EAST;
             }else{
-                System.out.println("ARAH YANG ANDA MASUKAN SALAH!");
+//                System.out.println("ARAH YANG ANDA MASUKAN SALAH!");
             }
         }else{
            // System.out.println("ARAH YANG ANDA MASUKAN SALAH!");
@@ -90,7 +91,7 @@ public class Robot {
     public String run(Directions direct){
         for (int i=0; i<this.commands.length; i++){
             move(String.valueOf(this.commands[i]), this.directions);
-            System.out.println(this.commands[i] + getPost());
+            System.out.println(this.commands[i] + getPost() + " " + this.directions);
         }
         return "";
     }

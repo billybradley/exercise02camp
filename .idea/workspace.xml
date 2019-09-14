@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="13a8b2c7-5089-49ff-92c6-6940cafbc8cc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/EXERCISE02/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EXERCISE02/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/EXERCISE02/com/enigma/model/Mobil.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EXERCISE02/com/enigma/model/Mobil.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -112,14 +110,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/com/enigma/model/Robot.java</url>
-          <line>89</line>
-          <properties class="com.enigma.model.Robot" method="run">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/enigma/model/Robot.java</url>
           <line>28</line>
