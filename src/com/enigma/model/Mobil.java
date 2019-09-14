@@ -7,7 +7,9 @@ public class Mobil {
     private final String B="B";
     private final String R="R";
     private final String L="L";
+    private Integer lMove=0;
     private Integer fuel=0;
+    public Integer fuelAgain=fuel;
 
     public Mobil(Integer x, Integer y){
         this.postX = x;
@@ -36,6 +38,7 @@ public class Mobil {
         return "";
     }
     public String run(){
+        lMove = this.commands.length - (this.fuel*3);
         for (int i=0; i<this.commands.length; i++){
             if(fuel==0){
                 System.out.println("Bensin Habis!");
@@ -46,7 +49,9 @@ public class Mobil {
             if ((i+1)%3==0){
                 dcreaseFuel(1);
             }
-            System.out.println("oiiii");
+        }
+        if(this.fuel==0){
+
         }
         vFuel();
         return "";
@@ -63,8 +68,9 @@ public class Mobil {
         if (this.fuel==0){
             System.out.println("Your Fuel is Empty!");
         }else{
-            System.out.println("Your Fuel Left : " + this.fuel);
+            System.out.println("Your Move Left : " + lMove);
         }
+        this.fuel=0;
     }
     public String getPost(){
         return "(" + postX + "," + postY + ")";
