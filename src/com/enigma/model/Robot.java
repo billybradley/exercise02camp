@@ -25,6 +25,7 @@ public class Robot {
         this.commands = comman.toCharArray();
         return "";
     }
+
     public String move (String movement, Directions direction){
         if (movement.equals(R)) {
             if (String.valueOf(direction).equals("NORTH")){
@@ -98,4 +99,3 @@ public class Robot {
         return "(" + postX + "," + postY + ")";
     }
 }
-
